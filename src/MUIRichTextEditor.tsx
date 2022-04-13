@@ -133,10 +133,9 @@ interface TMUIRichTextEditorStyles {
 const styles = (theme: Theme & TMUIRichTextEditorStyles) => createStyles({
     root: theme?.overrides?.MUIRichTextEditor?.root || {},
     container: theme?.overrides?.MUIRichTextEditor?.container || {
-        margin: theme.spacing(1, 0, 0, 0),
+        marginTop: 10,
         position: "relative",
-        fontFamily: theme.typography.body1.fontFamily,
-        fontSize: theme.typography.body1.fontSize,
+        fontSize: 14,
         '& figure': {
             margin: 0
         }
@@ -146,10 +145,10 @@ const styles = (theme: Theme & TMUIRichTextEditorStyles) => createStyles({
     },
     editor: theme?.overrides?.MUIRichTextEditor?.editor || {},
     editorContainer: theme?.overrides?.MUIRichTextEditor?.editorContainer || {
-        margin: theme.spacing(1, 0, 0, 0),
+        marginTop: 10,
         cursor: "text",
         width: "100%",
-        padding: theme.spacing(0, 0, 1, 0)
+        paddingBottom: 10
     },
     editorReadOnly: theme?.overrides?.MUIRichTextEditor?.editorReadOnly || {
         borderBottom: "none"
@@ -161,12 +160,12 @@ const styles = (theme: Theme & TMUIRichTextEditorStyles) => createStyles({
         display: "none"
     },
     placeHolder: theme?.overrides?.MUIRichTextEditor?.placeHolder || {
-        color: theme.palette.grey[600],
+        color: "rgba(255, 255, 255, 0.4)",
         position: "absolute",
         outline: "none"
     },
     linkPopover: theme?.overrides?.MUIRichTextEditor?.linkPopover || {
-        padding: theme.spacing(2, 2, 2, 2)
+        padding: 10
     },
     linkTextField: theme?.overrides?.MUIRichTextEditor?.linkTextField || {
         width: "100%"
