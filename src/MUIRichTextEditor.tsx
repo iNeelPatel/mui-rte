@@ -132,7 +132,7 @@ interface TMUIRichTextEditorStyles {
 
 const styles = (theme: Theme & TMUIRichTextEditorStyles) => createStyles({
     root: theme?.overrides?.MUIRichTextEditor?.root || {},
-    container: theme?.overrides?.MUIRichTextEditor?.container || {
+    container: {
         marginTop: 10,
         position: "relative",
         fontSize: 14,
